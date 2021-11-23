@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast", "dark"
 # Site Settings
 locale                   : "en-US"
 title                    : "Shurt Services"
-title_separator          : "-"
+title_separator          : "|"
 subtitle                 : "Consulting and development services for web, Python, and online community management"
 name                     : "Jeff Shurtliff"
 description              : "Consulting and development services for web, Python, and online community management"
