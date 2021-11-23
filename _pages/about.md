@@ -8,6 +8,6 @@ history of working in Global Services within the information security and enterp
 I am skilled in team leadership, Linux administration, Python and web development, user experience, 
 Customer Support, and online community management.
 
-I have a strong information technology professional with a Bachelor of Science (BS) from Utah Valley 
-University and current holder of the Certified Information Systems Security Professional (CISSP), 
+I have a strong information technology professional background with a Bachelor of Science (BS) from 
+Utah Valley University and current holder of the Certified Information Systems Security Professional (CISSP), 
 Certified Information Security Manager (CISM) and NetWitness Certified Administrator certifications.
