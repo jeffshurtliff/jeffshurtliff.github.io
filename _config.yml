@@ -1,7 +1,9 @@
 title: "Shurt Services"
 description: "Consulting and development services for web, Python, and online community management"
-theme: jekyll-theme-midnight
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 timezone: America/Denver
 encoding: utf-8
 
+plugins:
+  - jekyll-include-cache
 
