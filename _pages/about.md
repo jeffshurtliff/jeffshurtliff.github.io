@@ -1,8 +1,7 @@
 ---
-title: About
+title: About Jeff Shurtliff
 permalink: /about/
 ---
-# Jeff Shurtliff, CISSP, CISM 
 I am an experienced project manager, systems administrator and software developer with a demonstrated 
 history of working in Global Services within the information security and enterprise storage industries. 
 
