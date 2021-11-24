@@ -19,6 +19,8 @@ and currently manage two enterprise websites. Expertise with this platform invol
 * HTML5
 * CSS3
 * Sass/SCSS
+* JavaScript
+* jQuery
 * XML
 
 ## Shell Scripting
