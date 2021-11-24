@@ -2,6 +2,8 @@
 title: My Skill Set
 permalink: /skills/
 ---
+I have a wide variety of skills that make me an asset.
+
 ## Python Development
 I have several years of experience developing in Python for both open-source and private enterprise-level projects.
 
