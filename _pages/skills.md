@@ -1,6 +1,7 @@
 ---
 title: My Skill Set
 permalink: /skills/
+toc: true
 ---
 I have a wide variety of skills that make me an asset.
 
