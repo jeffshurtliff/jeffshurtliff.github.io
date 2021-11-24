@@ -104,9 +104,9 @@ analytics:
 author:
   name             : "Jeff Shurtliff, CISSP, CISM"
   avatar           : "/assets/images/avatar.png"
-  bio              : "I am an **amazing** person."
+  bio              : ""
   location         : "Orem, Utah, USA"
-  email            :
+  email            : "jeff@shurtservices.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
