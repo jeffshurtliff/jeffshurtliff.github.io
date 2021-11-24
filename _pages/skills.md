@@ -23,6 +23,9 @@ and currently manage two enterprise websites. Expertise with this platform invol
 * jQuery
 * XML
 
+## Jive Software Platform
+I am also an expert in administering and develop online community websites built on the Jive Software platform.
+
 ## Shell Scripting
 I have been writing shell scripts for various purposes including system administration and automation for over
 a decade using Bash and PowerShell, with the former being my preference.
