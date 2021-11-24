@@ -1,4 +1,4 @@
 ---
-title: Open-Source Projects
-permalink: /open-source/
+title: Projects
+permalink: /projects/
 ---

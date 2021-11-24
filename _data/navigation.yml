@@ -4,5 +4,5 @@ main:
     url: /about/
   - title: "Skills"
     url: /skills/
-  - title: "Open-Source"
-    url: /open-source/
+  - title: "Projects"
+    url: /projects/
