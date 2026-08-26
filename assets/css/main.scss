@@ -311,6 +311,38 @@ img {
   transform: translateY(-2px);
 }
 
+.social-links--icon-only a {
+  position: relative;
+}
+
+.social-links__tooltip {
+  background: var(--color-heading);
+  border-radius: var(--radius-sm);
+  bottom: calc(100% + 0.55rem);
+  box-shadow: 0 0.4rem 1rem var(--color-shadow);
+  color: var(--color-bg);
+  font-size: 0.76rem;
+  font-weight: 650;
+  left: 50%;
+  line-height: 1;
+  opacity: 0;
+  padding: 0.38rem 0.5rem;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(-50%, 0.2rem);
+  transition: opacity 140ms ease, transform 140ms ease, visibility 140ms ease;
+  visibility: hidden;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.social-links--icon-only a:hover .social-links__tooltip,
+.social-links--icon-only a:focus-visible .social-links__tooltip {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  visibility: visible;
+}
+
 .icon {
   height: 1.18rem;
   width: 1.18rem;
