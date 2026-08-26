@@ -12,11 +12,11 @@ repository: jeffshurtliff/jeffshurtliff.github.io
 
 author:
   name: Jeff Shurtliff
-  email: jeffshurtliff@gmail.com
+  email: jeff@shurt.us
   location: Orem, Utah, USA
 
 position: Enterprise Business Applications Leader
-email: jeffshurtliff@gmail.com
+email: jeff@shurt.us
 avatar: /assets/img/avatar.png
 avatar_small: /assets/img/avatar-192.png
 avatar_medium: /assets/img/avatar-384.png
@@ -33,7 +33,7 @@ availability:
     Exploring Director and Senior Manager roles in Business Applications,
     Enterprise Applications, CRM, Salesforce, and Customer Experience Technology.
   cta_label: Start a conversation
-  cta_url: mailto:jeffshurtliff@gmail.com
+  cta_url: mailto:jeff@shurt.us
 
 remote_theme: yaoyao-liu/minimal-light@1ea07f39518ac44644406380c83da6f89037c4fc
 plugins:
