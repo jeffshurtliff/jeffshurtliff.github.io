@@ -1,0 +1,14 @@
+<article class="project-card">
+  <div class="project-card__meta">
+    <span class="content-type">{{ include.project.type | replace: '-', ' ' }}</span>
+    {% if include.project.featured %}<span class="featured-label">Featured</span>{% endif %}
+  </div>
+  <h3><a href="{{ include.project.url | relative_url }}">{{ include.project.title }}</a></h3>
+  <p>{{ include.project.summary }}</p>
+  {% if include.project.technologies %}
+    <ul class="tag-list" aria-label="Technologies">
+      {% for technology in include.project.technologies limit: 5 %}<li>{{ technology }}</li>{% endfor %}
+    </ul>
+  {% endif %}
+  <a class="text-link" href="{{ include.project.url | relative_url }}">View details <span aria-hidden="true">→</span></a>
+</article>

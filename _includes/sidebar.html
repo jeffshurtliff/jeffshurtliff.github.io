@@ -1,0 +1,57 @@
+<header class="profile-header">
+  <a class="profile-avatar" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+    <picture>
+      <source
+        type="image/webp"
+        srcset="{{ site.avatar_small_webp | relative_url }} 192w, {{ site.avatar_medium_webp | relative_url }} 384w"
+        sizes="(max-width: 900px) 96px, 178px">
+      <img
+        src="{{ site.avatar_small | relative_url }}"
+        srcset="{{ site.avatar_small | relative_url }} 192w, {{ site.avatar_medium | relative_url }} 384w"
+        sizes="(max-width: 900px) 96px, 178px"
+        alt="Portrait of Jeff Shurtliff"
+        width="384"
+        height="384"
+        fetchpriority="high">
+    </picture>
+  </a>
+  <div class="profile-identity">
+    <p class="profile-name"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></p>
+    <p class="profile-position">{{ site.position }}</p>
+  </div>
+
+  {% if site.availability.enabled %}
+    <div class="availability-badge">
+      <span aria-hidden="true"></span>{{ site.availability.label }}
+    </div>
+  {% endif %}
+
+  <nav class="primary-nav" aria-label="Primary navigation">
+    <ul>
+      {% for item in site.data.navigation %}
+        {% assign show_item = true %}
+        {% if item.requires_posts and site.posts.size == 0 %}
+          {% assign show_item = false %}
+        {% endif %}
+        {% if show_item %}
+          {% assign is_current = false %}
+          {% if page.url == item.url %}
+            {% assign is_current = true %}
+          {% elsif item.url != '/' and page.url contains item.url %}
+            {% assign is_current = true %}
+          {% endif %}
+          <li>
+            <a href="{{ item.url | relative_url }}"{% if is_current %} aria-current="page"{% endif %}>{{ item.label }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+
+  {% include social-links.html %}
+
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+    <span class="theme-toggle__icon" aria-hidden="true">☀</span>
+    <span class="theme-toggle__label">Light theme</span>
+  </button>
+</header>

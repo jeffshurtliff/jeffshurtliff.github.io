@@ -1,0 +1,22 @@
+{% assign same_as_links = site.data.social | where: "same_as", true %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.author.name | jsonify }},
+  "url": {{ site.url | append: site.baseurl | jsonify }},
+  "image": {{ site.avatar | absolute_url | jsonify }},
+  "jobTitle": {{ site.position | jsonify }},
+  "description": {{ site.description | strip_newlines | jsonify }},
+  "email": {{ site.author.email | prepend: "mailto:" | jsonify }},
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Orem",
+    "addressRegion": "Utah",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    {% for item in same_as_links %}{{ item.url | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]
+}
+</script>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en-US' }}" data-theme="dark">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="site-shell">
+      <aside class="site-sidebar" aria-label="Profile and navigation">
+        {% include sidebar.html %}
+      </aside>
+      <div class="site-content">
+        <main class="site-main" id="main-content" tabindex="-1">
+          {{ content }}
+        </main>
+        {% include footer.html %}
+      </div>
+    </div>
+  </body>
+</html>

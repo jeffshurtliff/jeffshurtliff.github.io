@@ -1,0 +1,90 @@
+title: Jeff Shurtliff
+tagline: Enterprise Business Applications Leader
+description: >-
+  Enterprise business applications leader combining global people leadership,
+  Salesforce platform strategy, secure architecture, and hands-on Python engineering.
+url: "https://jeffshurtliff.github.io"
+baseurl: ""
+lang: en-US
+locale: en_US
+timezone: America/Denver
+repository: jeffshurtliff/jeffshurtliff.github.io
+
+author:
+  name: Jeff Shurtliff
+  email: jeffshurtliff@gmail.com
+  location: Orem, Utah
+
+position: Enterprise Business Applications Leader
+email: jeffshurtliff@gmail.com
+avatar: /assets/img/avatar.png
+avatar_small: /assets/img/avatar-192.png
+avatar_medium: /assets/img/avatar-384.png
+avatar_small_webp: /assets/img/avatar-192.webp
+avatar_medium_webp: /assets/img/avatar-384.webp
+logo: /assets/img/avatar.png
+image: /assets/img/social-preview.png
+resume_path: /assets/files/Jeff-Shurtliff-Resume-2026.pdf
+
+availability:
+  enabled: true
+  label: Open to new opportunities
+  message: >-
+    Exploring Director and Senior Manager roles in Business Applications,
+    Enterprise Applications, CRM, Salesforce, and Customer Experience Technology.
+  cta_label: Start a conversation
+  cta_url: mailto:jeffshurtliff@gmail.com
+
+remote_theme: yaoyao-liu/minimal-light@1ea07f39518ac44644406380c83da6f89037c4fc
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+permalink: /blog/:year/:month/:day/:title/
+feed:
+  path: feed.xml
+
+sass:
+  style: compressed
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - AGENTS.md
+  - CONTENT-LICENSE.md
+  - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - PLAN.md
+  - README.md
+  - local
+  - scripts
+  - tmp
+  - vendor

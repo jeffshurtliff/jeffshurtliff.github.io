@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="page post">
+  <header class="page-header">
+    <p class="eyebrow">Writing</p>
+    <h1>{{ page.title }}</h1>
+    <p class="post-date">{{ page.date | date: "%B %-d, %Y" }}</p>
+    {% if page.description %}<p class="page-lead">{{ page.description }}</p>{% endif %}
+    {% if page.tags %}
+      <ul class="tag-list" aria-label="Topics">
+        {% for tag in page.tags %}<li>{{ tag }}</li>{% endfor %}
+      </ul>
+    {% endif %}
+  </header>
+  <div class="page-body prose">
+    {{ content }}
+  </div>
+  <p><a class="text-link" href="{{ '/blog/' | relative_url }}"><span aria-hidden="true">←</span> Back to writing</a></p>
+</article>

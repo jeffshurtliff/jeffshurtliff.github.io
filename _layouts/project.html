@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="page project-detail">
+  <header class="page-header">
+    <p class="eyebrow">{{ page.type | replace: '-', ' ' }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="page-lead">{{ page.summary }}</p>
+    {% if page.technologies %}
+      <ul class="tag-list" aria-label="Technologies">
+        {% for technology in page.technologies %}<li>{{ technology }}</li>{% endfor %}
+      </ul>
+    {% endif %}
+    {% if page.links %}
+      <div class="button-row project-links">
+        {% for link in page.links %}
+          <a class="button{% if forloop.first %} button--primary{% else %} button--secondary{% endif %}" href="{{ link.url }}" rel="noopener">{{ link.label }} {% include icon.html name="external" %}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </header>
+  <div class="page-body prose">
+    {{ content }}
+  </div>
+  <p><a class="text-link" href="{{ '/projects/' | relative_url }}"><span aria-hidden="true">←</span> Back to projects</a></p>
+</article>
