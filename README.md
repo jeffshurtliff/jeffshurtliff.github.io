@@ -1,6 +1,6 @@
 # Jeff Shurtliff - Professional Portfolio
 
-This repository contains the source for [jeffshurtliff.github.io](https://jeffshurtliff.github.io), a recruiter-facing professional portfolio built with Jekyll and the [Minimal Light](https://github.com/yaoyao-liu/minimal-light) theme.
+This repository contains the source for [jeffshurtliff.github.io](https://jeffshurtliff.github.io) ([shurt.us](https://shurt.us)), a recruiter-facing professional portfolio built with Jekyll and the [Minimal Light](https://github.com/yaoyao-liu/minimal-light) theme.
 
 The site presents Jeff's enterprise business applications leadership, Salesforce platform experience, open-source Python work, selected professional case studies, résumé, and future writing.
 
