@@ -14,7 +14,43 @@
     button.querySelector(".theme-toggle__label").textContent = label;
   }
 
+  function isExternalSiteLink(link) {
+    var url;
+
+    try {
+      url = new URL(link.href, window.location.href);
+    } catch (error) {
+      return false;
+    }
+
+    return (url.protocol === "http:" || url.protocol === "https:") &&
+      url.origin !== window.location.origin;
+  }
+
+  function configureExternalSiteLinks() {
+    document.querySelectorAll("a[href]").forEach(function (link) {
+      if (!isExternalSiteLink(link)) {
+        return;
+      }
+
+      link.setAttribute("target", "_blank");
+
+      var relationships = (link.getAttribute("rel") || "").split(/\s+/).filter(Boolean);
+      var hasNoopener = relationships.some(function (relationship) {
+        return relationship.toLowerCase() === "noopener";
+      });
+
+      if (!hasNoopener) {
+        relationships.push("noopener");
+        link.setAttribute("rel", relationships.join(" "));
+      }
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
+    // This also covers external links authored in Markdown page content.
+    configureExternalSiteLinks();
+
     var button = document.getElementById("theme-toggle");
     if (!button) {
       return;
