@@ -530,21 +530,34 @@ img {
   color: var(--color-accent-readable);
 }
 
+// Reset the remote theme's fixed header download-list layout.
 .tag-list {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
+  height: auto;
   list-style: none;
   margin: 0 0 1.25rem;
   padding: 0;
+  position: static;
+  right: auto;
+  top: auto;
+  width: auto;
 }
 
 .tag-list li {
   background: var(--color-surface-raised);
+  border: 0;
   border-radius: 999px;
   color: var(--color-muted);
+  float: none;
   font-size: 0.78rem;
+  height: auto;
   padding: 0.2rem 0.6rem;
+  width: auto;
 }
 
 .post-list {
