@@ -7,7 +7,7 @@
 
   function updateButton(button, theme) {
     var nextTheme = theme === "dark" ? "light" : "dark";
-    var label = nextTheme.charAt(0).toUpperCase() + nextTheme.slice(1) + " theme";
+    var label = "Switch to " + nextTheme.charAt(0).toUpperCase() + nextTheme.slice(1) + " Mode";
     button.setAttribute("aria-label", "Switch to " + nextTheme + " theme");
     button.setAttribute("aria-pressed", theme === "light" ? "true" : "false");
     button.querySelector(".theme-toggle__icon").textContent = theme === "dark" ? "☀" : "☾";
