@@ -14,7 +14,7 @@ layout: default
     {% if page.links %}
       <div class="button-row project-links">
         {% for link in page.links %}
-          <a class="button{% if forloop.first %} button--primary{% else %} button--secondary{% endif %}" href="{{ link.url }}" rel="noopener">{{ link.label }} {% include icon.html name="external" %}</a>
+          <a class="button{% if forloop.first %} button--primary{% else %} button--secondary{% endif %}" href="{{ link.url }}" rel="noopener" target="_blank">{{ link.label }} {% include icon.html name="external" %}</a>
         {% endfor %}
       </div>
     {% endif %}
