@@ -1,0 +1,15 @@
+<ul class="social-links{% if include.labels %} social-links--labeled{% endif %}" aria-label="Professional links">
+  {% for item in site.data.social %}
+    {% if item.internal %}
+      {% assign social_url = item.url | relative_url %}
+    {% else %}
+      {% assign social_url = item.url %}
+    {% endif %}
+    <li>
+      <a href="{{ social_url }}" aria-label="{{ item.label }}"{% if item.same_as %} rel="me noopener"{% endif %}>
+        {% include icon.html name=item.icon %}
+        {% if include.labels %}<span>{{ item.label }}</span>{% endif %}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

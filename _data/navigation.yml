@@ -1,0 +1,11 @@
+- label: Home
+  url: /
+- label: Experience
+  url: /experience/
+- label: Projects
+  url: /projects/
+- label: Writing
+  url: /blog/
+  requires_posts: true
+- label: Résumé
+  url: /resume/

@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+repository_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd -P)"
+site_directory="${repository_root}/_site"
+
+cd "${repository_root}"
+bundle exec jekyll build --strict_front_matter
+
+# Minimal Light's repository contains assets for its upstream demo. They are
+# merged after Jekyll's normal exclusion phase, so remove only the known demo
+# outputs before validation and deployment.
+unused_theme_assets=(
+  "assets/css/font.css"
+  "assets/css/font_sans_serif.css"
+  "assets/css/publications-no-dark-mode.css"
+  "assets/css/publications.css"
+  "assets/css/style-no-dark-mode.css"
+  "assets/css/style.css"
+  "assets/files/curriculum_vitae.pdf"
+  "assets/img/favicon-dark.png"
+  "assets/img/teaser_example.png"
+  "assets/img/teaser_example_2.png"
+  "assets/js/favicon-switcher.js"
+  "assets/js/scale.fix.js"
+)
+
+for relative_path in "${unused_theme_assets[@]}"; do
+  rm -f -- "${site_directory}/${relative_path}"
+done
