@@ -840,6 +840,11 @@ img {
     padding-top: 0 !important;
   }
 
+  .prose h2 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
   a {
     color: #1d2430;
   }
