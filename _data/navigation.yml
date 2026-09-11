@@ -4,7 +4,7 @@
   url: /experience/
 - label: Projects
   url: /projects/
-- label: Writing
+- label: Blog
   url: /blog/
   requires_posts: true
 - label: Résumé
