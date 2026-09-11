@@ -1,5 +1,5 @@
 ---
-title: Writing
+title: Blog
 eyebrow: Ideas in practice
 lead: >-
   Practical notes on enterprise platforms, Salesforce architecture, leadership, automation, security, and responsible AI-assisted engineering.
