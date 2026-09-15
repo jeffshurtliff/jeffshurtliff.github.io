@@ -12,8 +12,10 @@ technologies:
   - File Recovery
   - Command-Line Tools
 links:
-  - label: GitHub
+  - label: View on GitHub
     url: https://github.com/jeffshurtliff/jpeg-preview-recovery
+  - label: Read the Story
+    url: /blog/2026/09/11/family-photos-python-ai/
 ---
 
 ## Problem
