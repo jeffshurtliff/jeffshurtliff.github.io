@@ -14,7 +14,12 @@ layout: default
     {% if page.links %}
       <div class="button-row project-links">
         {% for link in page.links %}
-          <a class="button{% if forloop.first %} button--primary{% else %} button--secondary{% endif %}" href="{{ link.url }}" rel="noopener" target="_blank">{{ link.label }} {% include icon.html name="external" %}</a>
+          {% assign link_prefix = link.url | slice: 0, 1 %}
+          {% if link_prefix == '/' %}
+            <a class="button{% if forloop.first %} button--primary{% else %} button--secondary{% endif %}" href="{{ link.url | relative_url }}">{{ link.label }}</a>
+          {% else %}
+            <a class="button{% if forloop.first %} button--primary{% else %} button--secondary{% endif %}" href="{{ link.url }}" rel="noopener" target="_blank">{{ link.label }} {% include icon.html name="external" %}</a>
+          {% endif %}
         {% endfor %}
       </div>
     {% endif %}
