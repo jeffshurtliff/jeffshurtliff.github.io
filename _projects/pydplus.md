@@ -12,11 +12,13 @@ technologies:
   - OAuth JWT
   - PyPI
 links:
-  - label: GitHub
+  - label: View on GitHub
     url: https://github.com/jeffshurtliff/pydplus
-  - label: Documentation
+  - label: Read the Docs
     url: https://pydplus.readthedocs.io/en/stable/
-  - label: PyPI
+  - label: See the Changelog
+    url: https://pydplus.readthedocs.io/en/latest/CHANGELOG.html
+  - label: View on PyPI
     url: https://pypi.org/project/pydplus/
 ---
 

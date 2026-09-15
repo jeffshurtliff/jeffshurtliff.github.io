@@ -12,11 +12,13 @@ technologies:
   - OAuth
   - PyPI
 links:
-  - label: GitHub
+  - label: View on GitHub
     url: https://github.com/jeffshurtliff/salespyforce
-  - label: Documentation
-    url: https://salespyforce.readthedocs.io/en/latest/
-  - label: PyPI
+  - label: Read the Docs
+    url: https://salespyforce.readthedocs.io/en/stable/
+  - label: See the Changelog
+    url: https://salespyforce.readthedocs.io/en/latest/CHANGELOG.html
+  - label: View on PyPI
     url: https://pypi.org/project/salespyforce/
 ---
 
