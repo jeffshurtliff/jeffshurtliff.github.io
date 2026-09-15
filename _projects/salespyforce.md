@@ -15,7 +15,9 @@ links:
   - label: GitHub
     url: https://github.com/jeffshurtliff/salespyforce
   - label: Documentation
-    url: https://salespyforce.readthedocs.io/en/latest/
+    url: https://salespyforce.readthedocs.io/en/stable/
+  - label: Changelog
+    url: https://salespyforce.readthedocs.io/en/latest/CHANGELOG.html
   - label: PyPI
     url: https://pypi.org/project/salespyforce/
 ---

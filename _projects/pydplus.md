@@ -16,6 +16,8 @@ links:
     url: https://github.com/jeffshurtliff/pydplus
   - label: Documentation
     url: https://pydplus.readthedocs.io/en/stable/
+  - label: Changelog
+    url: https://pydplus.readthedocs.io/en/latest/CHANGELOG.html
   - label: PyPI
     url: https://pypi.org/project/pydplus/
 ---
