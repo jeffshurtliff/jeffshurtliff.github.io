@@ -78,6 +78,25 @@ bundle exec jekyll doctor
 bundle exec htmlproofer ./_site --disable-external
 ```
 
+## Google Analytics
+
+GA4 uses the `google_analytics` measurement ID in `_config.yml`. The shared local
+head includes `_includes/google-analytics.html`, which loads Google's `gtag.js`
+once per page only when `JEKYLL_ENV=production` and the ID is configured. Normal
+local development builds omit the tag. Remove the ID or set it to an empty string
+to disable tracking.
+
+The GitHub Actions build already sets `JEKYLL_ENV=production`. To inspect the
+production HTML locally, run:
+
+```bash
+JEKYLL_ENV=production ./scripts/build-site
+```
+
+After deployment, visit the live site and verify the tag with Google Tag Assistant
+and the GA4 Realtime report. Local HTML validation does not confirm that the
+Analytics property has received events.
+
 ## Architecture
 
 - Jekyll pages provide Home, Experience, Projects, Résumé, Writing, and 404 routes.

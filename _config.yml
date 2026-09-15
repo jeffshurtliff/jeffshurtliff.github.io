@@ -10,6 +10,9 @@ locale: en_US
 timezone: America/Denver
 repository: jeffshurtliff/jeffshurtliff.github.io
 
+# GA4 measurement ID; the local head include loads it only in production.
+google_analytics: G-2MKN00F469
+
 author:
   name: Jeff Shurtliff
   email: jeff@shurt.us
